@@ -1,3 +1,6 @@
-module.exports = function isNullOrUndefined(obj) {
+module.exports = isNullOrUndefined;
+
+
+function isNullOrUndefined(obj) {
     return obj === null || obj === void 0;
-};
+}
