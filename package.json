@@ -8,7 +8,8 @@
   },
   "main": "src/isNullOrUndefined.js",
   "scripts": {
-    "test": "jest --verbose"
+    "node-test": "node ./test/isNullOrUndefined-test.js | ./node_modules/.bin/tap-spec",
+    "browser-test" : "zuul -- ./test/isNullOrUndefined.js"
   },
   "author": "Nathan Faucett",
   "license": "MIT",
@@ -17,13 +18,9 @@
     "grunt": "^0.4.5",
     "grunt-contrib-jshint": "^0.10.0",
     "grunt-jsbeautifier": "^0.2.7",
-    "jest-cli": "^0.4.5"
-  },
-  "jest" : {
-    "collectCoverage" : true,
-    "testFileExtensions" : ["js"],
-    "modulePathIgnorePatterns" : [
-      "/node_modules/"
-    ]
+    "tap-dot": "^1.0.0",
+    "tap-spec": "^3.0.0",
+    "tape": "^4.0.0",
+    "zuul": "^3.0.0"
   }
 }
