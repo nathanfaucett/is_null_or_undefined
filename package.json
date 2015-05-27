@@ -9,7 +9,8 @@
   "main": "src/isNullOrUndefined.js",
   "scripts": {
     "node-test": "node ./test/isNullOrUndefined-test.js | ./node_modules/.bin/tap-spec",
-    "browser-test" : "zuul -- test"
+    "browser-test-travis" : "zuul -- ./test/isNullOrUndefined-test.js",
+    "browser-test" : "zuul --local 8080 ./test/isNullOrUndefined-test.js"
   },
   "author": "Nathan Faucett",
   "license": "MIT",

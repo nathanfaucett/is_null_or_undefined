@@ -3,7 +3,7 @@ language: node_js
 node_js:
   - "0.12"
 
-script: "npm run node-test && npm run browser-test"
+script: "npm run node-test && npm run browser-test-travis"
 
 env:
   global:
