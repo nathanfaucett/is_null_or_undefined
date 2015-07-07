@@ -14,7 +14,5 @@ module.exports = isNullOrUndefined;
     isNullOrUndefined("string");    // returns false
 **/
 function isNullOrUndefined(obj) {
-
     return (obj === null || obj === void 0);
-
 }

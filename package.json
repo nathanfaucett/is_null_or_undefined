@@ -8,6 +8,7 @@
   },
   "main": "src/isNullOrUndefined.js",
   "scripts": {
+    "test": "npm run node-test",
     "node-test": "node ./test/isNullOrUndefined-test.js | ./node_modules/.bin/tap-spec",
     "browser-test-travis" : "zuul -- ./test/isNullOrUndefined-test.js",
     "browser-test" : "zuul --local 8080 ./test/isNullOrUndefined-test.js"
