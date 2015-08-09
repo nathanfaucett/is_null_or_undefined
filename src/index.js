@@ -1,3 +1,7 @@
+var isNull = require("is_null"),
+    isUndefined = require("is_undefined");
+
+
 module.exports = isNullOrUndefined;
 
 /**
@@ -13,6 +17,6 @@ module.exports = isNullOrUndefined;
     isNullOrUndefined(undefined);   // returns true
     isNullOrUndefined("string");    // returns false
 **/
-function isNullOrUndefined(obj) {
-    return (obj === null || obj === void 0);
+function isNullOrUndefined(value) {
+    return isNull(value) || isUndefined(value);
 }
